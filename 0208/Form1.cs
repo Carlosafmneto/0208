@@ -6,5 +6,20 @@ namespace _0208
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
