@@ -35,6 +35,8 @@
             LBTotal = new Label();
             LBresultado = new Label();
             BTNSoma = new Button();
+            BTNMenos = new Button();
+            BTNVezes = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -99,11 +101,33 @@
             BTNSoma.Text = "Soma";
             BTNSoma.UseVisualStyleBackColor = true;
             // 
+            // BTNMenos
+            // 
+            BTNMenos.Location = new Point(111, 235);
+            BTNMenos.Name = "BTNMenos";
+            BTNMenos.Size = new Size(75, 23);
+            BTNMenos.TabIndex = 7;
+            BTNMenos.Text = "Menos";
+            BTNMenos.UseVisualStyleBackColor = true;
+            BTNMenos.Click += BTNMenos_Click;
+            // 
+            // BTNVezes
+            // 
+            BTNVezes.Location = new Point(111, 276);
+            BTNVezes.Name = "BTNVezes";
+            BTNVezes.Size = new Size(75, 23);
+            BTNVezes.TabIndex = 8;
+            BTNVezes.Text = "Vezes";
+            BTNVezes.UseVisualStyleBackColor = true;
+            BTNVezes.Click += BTNVezes_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BTNVezes);
+            Controls.Add(BTNMenos);
             Controls.Add(BTNSoma);
             Controls.Add(LBresultado);
             Controls.Add(LBTotal);
@@ -126,5 +150,7 @@
         private Label LBTotal;
         private Label LBresultado;
         private Button BTNSoma;
+        private Button BTNMenos;
+        private Button BTNVezes;
     }
 }
